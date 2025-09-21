@@ -126,6 +126,9 @@ class Booking(models.Model):
     def total_price(self):
         """Calculating total price"""
         return self.number_of_nights * self.property.pricepernight   
+    
+    def __str__(self):
+        return f'Booking by {self.user.get_full_name()} for {self.property.name} from {self.start_date} to {self.end_date} - Status: {self.status}'
 
 # Review model
 class Review(models.Model):
