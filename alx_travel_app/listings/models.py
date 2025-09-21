@@ -1,3 +1,13 @@
 from django.db import models
 
-# Create your models here.
+# Listings model
+class Listing(models.Model):
+    pass
+
+# Booking model
+class Booking(models.Model):
+    pass
+
+# Review model
+class Review(models.Model):
+    pass
